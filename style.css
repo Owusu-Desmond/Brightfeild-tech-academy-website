@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
+*{margin: 0px;}
 
 .brightfield-icon{
     height: 2cm;
@@ -168,12 +169,6 @@ h1 span:nth-child(8) {
 /* the page content css */
 /* the page content css */
 
-.page-content-container{
-    display: grid;
-    grid-gap: 0.2cm;
-    grid-template-columns: 65% 35%;
-
-}
 .about-services-container{
     font-size: 30px;
     margin-left: 0.3cm;
@@ -190,10 +185,6 @@ h1 span:nth-child(8) {
 .oliver-picture{
     height: auto;
     width: 100%;
-}
-.aboutTheManager-and-ourServices-section{
-    border: outset; margin-top: 0.7cm; font-family: 'Dongle', sans-serif; 
-    font-size: 30px; line-height: 0.7cm; background-color:#f8f9fa;
 }
 
 /*grid for early starters*/
@@ -229,16 +220,44 @@ h1 span:nth-child(8) {
     height: auto;
     width: 100%;
 }
-@media screen and (max-width:500px){
-    .page-content-container{
-    grid-template-columns: repeat(auto-fill , minmax(600px , 1fr));
+
+    
+@media screen and (max-width:700px){
+    .Image1InSlide, .Image2InSlide, .Image3InSlide{
+        height: 10cm;
     }
+    
+    .welcome-container{
+        left: 16%;
+        top: 4cm;
+    }
+    .welcome-container > p{
+        font-size: 20px;
+    }
+    .welcome-container > h1{
+        font-size: 30px;
+    }
+    .about-services-container{
+        font-size: 25px;
+        margin-left: 0cm;
+        margin-top: 0.2cm;
+        line-height: 0.7cm;
+        width: 100%;
+    }
+    .about-text{
+        font-size: 40px;
+        
+    }
+    #imageInCard{
+        width: 100%;
+        height: auto;
+    }
+    #card{
+        width: 80%;
+    }
+    .early-starters-details-grid{
+       grid-template-columns: 1fr;
+       width: 80%;
 }
-    
-@media screen and (max-width:600px){
-    
-.page-content-container{
-    grid-template-columns: repeat(auto-fill , minmax(200x , 1fr));
-    
-}
+
 }
